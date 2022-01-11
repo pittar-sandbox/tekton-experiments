@@ -50,7 +50,7 @@ spec:
         - fetch-repository
       taskRef:
         kind: Task
-        name: maven
+        name: maven3
       workspaces:
         - name: maven-settings
           workspace: maven-settings
