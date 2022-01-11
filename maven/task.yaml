@@ -1,7 +1,7 @@
 apiVersion: tekton.dev/v1beta1
 kind: Task
 metadata:
-  name: maven
+  name: maven3
 spec:
   description: This Task can be used to run a Maven build.  Based on the maven ClusterTask.
   params:
