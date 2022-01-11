@@ -10,6 +10,8 @@ spec:
       value: 'https://github.com/pittar/spring-petclinic.git'
     - name: git-revision
       value: main
+    - name: IMAGE
+      value: image-registry.openshift-image-registry.svc:5000/txt137-openliberty-getting-started/gettingstarted-guide
     - name: maven-image
       value: image-registry.openshift-image-registry.svc:5000/openshift/ubi8-openjdk-11
       #value: image-registry.openshift-image-registry.svc:5000/txt137-openliberty-getting-started/openjdk-11
