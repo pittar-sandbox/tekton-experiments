@@ -38,7 +38,7 @@ spec:
           workspace: shared-workspace
     - name: build-java-app
       params:
-        - name: maven-image
+        - name: MAVEN_IMAGE
           value: $(params.maven-image)
         - name: GOALS
           value:
