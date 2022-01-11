@@ -14,7 +14,7 @@ spec:
       value: image-registry.openshift-image-registry.svc:5000/txt137-openliberty-getting-started/gettingstarted-guide
     - name: maven-image
       value: image-registry.openshift-image-registry.svc:5000/openshift/ubi8-openjdk-11:1.3
-      #value: image-registry.openshift-image-registry.svc:5000/txt137-openliberty-getting-started/openjdk-11
+      #value: image-registry.openshift-image-registry.svc:5000/txt137-openliberty-getting-started/openjdk-11:latest
   pipelineRef:
     name: build-and-deploy-demo
   workspaces:
