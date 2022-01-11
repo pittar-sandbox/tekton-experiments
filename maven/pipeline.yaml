@@ -70,26 +70,26 @@ spec:
       workspaces:
         - name: source
           workspace: shared-workspace
-    - name: apply-manifests
-      runAfter:
-        - build-image
-      taskRef:
-        kind: Task
-        name: apply-manifests
-      workspaces:
-        - name: source
-          workspace: shared-workspace
-    - name: update-deployment
-      params:
-        - name: deployment
-          value: $(params.deployment-name)
-        - name: IMAGE
-          value: $(params.IMAGE)
-      runAfter:
-        - apply-manifests
-      taskRef:
-        kind: Task
-        name: update-deployment
+#     - name: apply-manifests
+#       runAfter:
+#         - build-image
+#       taskRef:
+#         kind: Task
+#         name: apply-manifests
+#       workspaces:
+#         - name: source
+#           workspace: shared-workspace
+#     - name: update-deployment
+#       params:
+#         - name: deployment
+#           value: $(params.deployment-name)
+#         - name: IMAGE
+#           value: $(params.IMAGE)
+#       runAfter:
+#         - apply-manifests
+#       taskRef:
+#         kind: Task
+#         name: update-deployment
   workspaces:
     - name: shared-workspace
     - name: maven-settings
